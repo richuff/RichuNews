@@ -9,7 +9,7 @@
 				<text class="posttime">{{getDatetime}}</text>
 			</view>
 			<view class="content">
-				{{Article.context}}
+				<text>{{Article.context}}</text>
 			</view>
 			<view class="imgs" v-if="Article.imageURL">
 				<image class="img" v-for="(item,index) of Article.imageURL" :src="item" mode="widthFix"></image>
