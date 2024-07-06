@@ -1,0 +1,16 @@
+.add.data-v-d85b74b4 {
+  padding: 30rpx;
+}
+.add .message input.data-v-d85b74b4 {
+  border: 1rpx solid #eee;
+  height: 80rpx;
+  padding: 0 20rpx;
+}
+.add .message .context.data-v-d85b74b4 {
+  border: 1rpx solid #eee;
+  width: 100%;
+  margin: 20rpx 0;
+}
+.add .message .submit.data-v-d85b74b4 {
+  margin-top: 20rpx;
+}

@@ -1,0 +1,57 @@
+.content .context.data-v-1cf27b2a {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content .context .item.data-v-1cf27b2a {
+  padding: 20rpx 0;
+  display: flex;
+  text-align: justify;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-right: 10rpx;
+}
+.content .context .item .text.data-v-1cf27b2a {
+  flex: 1;
+}
+.content .context .item .text .title.data-v-1cf27b2a {
+  font-size: 40rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.content .context .item .text .info.data-v-1cf27b2a {
+  font-size: 28rpx;
+  color: #888;
+}
+.content .context .item .text .info .time.data-v-1cf27b2a {
+  margin: 0rpx 20rpx;
+}
+.content .context .item .bac.data-v-1cf27b2a {
+  width: 260rpx;
+  height: 200rpx;
+}
+.content .context .edit.data-v-1cf27b2a {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #fc92ff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 100rpx;
+  font-size: 70rpx;
+  position: fixed;
+  right: 60rpx;
+  bottom: 100rpx;
+  box-shadow: 0 0 20rpx rgba(252, 146, 255, 0.6);
+}

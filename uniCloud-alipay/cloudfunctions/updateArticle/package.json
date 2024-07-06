@@ -1,0 +1,7 @@
+{
+  "name": "updateArticle",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

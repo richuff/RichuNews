@@ -1,0 +1,16 @@
+.edit.data-v-ecc27760 {
+  padding: 30rpx;
+}
+.edit .message input.data-v-ecc27760 {
+  border: 1rpx solid #eee;
+  height: 80rpx;
+  padding: 0 20rpx;
+}
+.edit .message .context.data-v-ecc27760 {
+  border: 1rpx solid #eee;
+  width: 100%;
+  margin: 20rpx 0;
+}
+.edit .message .submit.data-v-ecc27760 {
+  margin-top: 20rpx;
+}

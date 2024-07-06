@@ -1,0 +1,35 @@
+.detail {
+  padding: 30rpx;
+}
+.detail .title {
+  font-size: 40rpx;
+  color: #000;
+  text-align: justify;
+  line-height: 1.4em;
+}
+.detail .info {
+  font-size: 30rpx;
+  color: #666;
+  padding: 30rpx 0 60rpx;
+}
+.detail .info text {
+  padding-right: 30rpx;
+}
+.detail .content {
+  font-size: 30rpx;
+  line-height: 1.4em;
+}
+.detail .edit {
+  padding: 50rpx 0;
+}
+.detail .edit button {
+  margin-right: 50rpx;
+}
+.detail .imgs {
+  padding-top: 50rpx ;
+}
+.detail .imgs .img {
+  width: 100%;
+  display: block;
+  margin-bottom: 30rpx;
+}

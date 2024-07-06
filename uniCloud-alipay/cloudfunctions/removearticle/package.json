@@ -1,0 +1,7 @@
+{
+  "name": "removearticle",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
