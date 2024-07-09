@@ -4,7 +4,13 @@
 			<form class="message" @submit="OnSubmit">
 				<input type="text" name="title" placeholder="请输入标题" class="title" v-model="formdata.title"/>
 				<input type="text" name="author" placeholder="请输入作者" class="author" v-model="formdata.author"/>
-				<textarea :maxlength="-1" name="context" class="context" placeholder="请输入详细内容" v-model="formdata.context"></textarea>
+				<textarea
+					:maxlength="-1" 
+					name="context" 
+					class="context" 
+					placeholder="请输入详细内容" 
+					v-model="formdata.context">
+				</textarea>
 				<view class="file">
 					<uni-file-picker 
 						v-model="imageValue" 
@@ -23,11 +29,13 @@
 </template>
 
 <script setup>
-import {ref,reactive} from 'vue'
+import {ref} from 'vue'
 let detail = ref({});
+
+const markdownText = ref('##666')
 let isshowbutton = ref(true);
 let imageValue = ref([]);
-let formdata = reactive({
+let formdata = ref({
 	title:"",
 	author:"",
 	context:""
@@ -83,6 +91,7 @@ const fail = ()=>{
 				border: 1rpx solid #eee;
 				height: 80rpx;
 				padding: 0 20rpx;
+				margin-bottom: 20rpx;
 			}
 			.context{
 				border: 1rpx solid #eee;

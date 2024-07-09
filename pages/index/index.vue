@@ -9,7 +9,8 @@
 					<view class="info">
 						<text>{{item.author}}</text>
 						<text class="time">{{getDatetime(index)}}</text>
-						<text>日初</text>
+						<!-- <view>{{locationed}}</view> -->
+						<text>( つ•̀ω•́)つ</text>
 					</view>
 				</view>
 				<image v-if="item.imageURL.length" :src="item.imageURL[0]"  mode="aspectFill" class="bac"></image>
@@ -26,6 +27,7 @@
 import {onLoad,onReachBottom,onPullDownRefresh} from "@dcloudio/uni-app"
 import {ref,computed} from 'vue'
 let listArr = ref([]);
+
 const goEdit = ()=>{
 	uni.navigateTo({
 		url:"/pages/Add/Add"
@@ -54,6 +56,7 @@ const getData = ()=>{
 
 onLoad(()=>{
 	getData();
+	/* getlocation(); */
 })
 
 //()=> 回调一 (参数)=>{} 回调二
@@ -68,7 +71,7 @@ const getDatetime = computed(() => (index)=>{
 	}else if (ntime - time >= 3600000 && ntime - time < 86400000){
 		return Math.floor((ntime - time) / 3600000) + "小时前";
 	}else{
-		return postdate.getFullYear()+'-'+(postdate.getMonth()+1)+'-'+postdate.getDay();
+		return postdate.getFullYear()+'-'+(postdate.getMonth()+1)+'-'+postdate.getDate();
 	}
 })
 
@@ -77,6 +80,15 @@ const goDetail = (id)=>{
 		url:"/pages/detail/detail?id="+id
 	})
 }
+/* let locationed = ref("")
+const getlocation = ()=>{
+	uni.getLocation({
+		type:"gcj02",
+		geocode:true
+	}).then(res=>{
+		locationed.value = res.address.province
+	})
+} */
 </script>
 
 <style lang="less" scoped>

@@ -9,7 +9,7 @@
 				<text class="posttime">{{getDatetime}}</text>
 			</view>
 			<view class="content">
-				<text>{{Article.context}}</text>
+				<text style="white-space:pre-wrap;">{{Article.context}}</text>
 			</view>
 			<view class="imgs" v-if="Article.imageURL">
 				<image class="img" v-for="(item,index) of Article.imageURL" :src="item" mode="widthFix"></image>
@@ -77,7 +77,7 @@ const getDatetime = computed(()=>{
 	}else if (ntime - time >= 3600000 && ntime - time < 86400000){
 		return Math.floor((ntime - time) / 3600000) + "小时前";
 	}else{
-		return postdate.getFullYear()+'-'+(postdate.getMonth()+1)+'-'+postdate.getDay();
+		return postdate.getFullYear()+'-'+(postdate.getMonth()+1)+'-'+postdate.getDate();
 	}
 })
 
