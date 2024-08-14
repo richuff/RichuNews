@@ -278,16 +278,21 @@
   padding: 0.9375rem;
 }
 .add .message uni-input[data-v-d85b74b4] {
+  box-sizing: border-box;
   border: 0.03125rem solid #eee;
   height: 2.5rem;
   padding: 0 0.625rem;
   margin-bottom: 0.625rem;
 }
-.add .message .detail[data-v-d85b74b4] {
+.add .message .context[data-v-d85b74b4] {
+  box-sizing: border-box;
   border: 0.03125rem solid #eee;
   width: 100%;
   margin: 0.625rem 0;
+  -webkit-user-select: auto!important;
+          user-select: auto!important;
 }
 .add .message .submit[data-v-d85b74b4] {
+  box-sizing: border-box;
   margin-top: 0.625rem;
 }

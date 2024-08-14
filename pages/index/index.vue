@@ -9,8 +9,8 @@
 					<view class="info">
 						<text>{{item.author}}</text>
 						<text class="time">{{getDatetime(index)}}</text>
-						<!-- <view>{{locationed}}</view> -->
-						<text>( つ•̀ω•́)つ</text>
+						<text v-if="item.location">{{item.location}}</text>
+						<text v-else>( つ•̀ω•́)つ</text>
 					</view>
 				</view>
 				<image v-if="item.imageURL.length" :src="item.imageURL[0]"  mode="aspectFill" class="bac"></image>
@@ -56,7 +56,6 @@ const getData = ()=>{
 
 onLoad(()=>{
 	getData();
-	/* getlocation(); */
 })
 
 //()=> 回调一 (参数)=>{} 回调二
@@ -80,15 +79,7 @@ const goDetail = (id)=>{
 		url:"/pages/detail/detail?id="+id
 	})
 }
-/* let locationed = ref("")
-const getlocation = ()=>{
-	uni.getLocation({
-		type:"gcj02",
-		geocode:true
-	}).then(res=>{
-		locationed.value = res.address.province
-	})
-} */
+
 </script>
 
 <style lang="less" scoped>
