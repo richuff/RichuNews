@@ -6,21 +6,21 @@
 
 - HBulider X 4.24
 
->├─pages     #页面结构
->│  ├─Add     #添加页面
->│  ├─detail    #详情页面
->│  ├─Edit    #编辑页面
->│  └─index   #索引页面
->├─static      #静态图片文件
->│  └─images
->├─uniCloud-alipay  #unicloud云函数
->│  ├─cloudfunctions
->│  │  ├─AddArticle    添加文章
->│  │  ├─getArticle    获取文章
->│  │  ├─getarticlebyid    获取文章的id
->│  │  ├─removearticle  移除文章
->│  │  └─updateArticle   更新文章
->│  └─database
+>├─pages     #页面结构 <br/>
+>│  ├─Add     #添加页面 <br/>
+>│  ├─detail    #详情页面 <br/>
+>│  ├─Edit    #编辑页面 <br/>
+>│  └─index   #索引页面 <br/>
+>├─static      #静态图片文件 <br/>
+>│  └─images <br/>
+>├─uniCloud-alipay  #unicloud云函数 <br/>
+>│  ├─cloudfunctions <br/>
+>│  │  ├─AddArticle    添加文章 <br/>
+>│  │  ├─getArticle    获取文章 <br/>
+>│  │  ├─getarticlebyid    获取文章的id <br/>
+>│  │  ├─removearticle  移除文章 <br/>
+>│  │  └─updateArticle   更新文章 <br/>
+>│  └─database<br/>
 >
 >main.js  入口文件
 >
