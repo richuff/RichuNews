@@ -1,4 +1,41 @@
+## 概述
+
+> 本项目使用vue框架和unicloud构建，主要功能类似CSDN等博客社区，可以发布文章，点赞，评论等功能
+
+## 环境
+
+- HBulider X 4.24
+
+>├─pages     #页面结构
+>│  ├─Add     #添加页面
+>│  ├─detail    #详情页面
+>│  ├─Edit    #编辑页面
+>│  └─index   #索引页面
+>├─static      #静态图片文件
+>│  └─images
+>├─uniCloud-alipay  #unicloud云函数
+>│  ├─cloudfunctions
+>│  │  ├─AddArticle    添加文章
+>│  │  ├─getArticle    获取文章
+>│  │  ├─getarticlebyid    获取文章的id
+>│  │  ├─removearticle  移除文章
+>│  │  └─updateArticle   更新文章
+>│  └─database
+>
+>main.js  入口文件
+>
+>manifest.js  配置文件
+>
+>pages.json   页面的配置文件
+>
+>uni.scss 样式文件
+>
+>vite.config 配置文件
+
+## 更新日志
+
 v1.0.0
+
 >2024 4 25
 > 基本架构的搭建和基本模块的构建
 
@@ -39,7 +76,7 @@ v1.2.5
 
 - 增加了定位模块，可获取发布者地区的ip
 
+## 交流
 
-
-
+1691401076@qq.com   可以通过邮件联系
 
